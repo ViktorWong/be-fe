@@ -7,19 +7,20 @@ import WCEmbed from "@theme/components/Examples/WCEmbed/WCEmbed.vue";
   <header>
     <div class="header-content">
       <h1>
-        <strong>Dev environments.</strong><br />In your
-        <strong>web app.</strong>
+        <strong>跟着我学习</strong><br />走进
+        <strong>前端开发世界</strong>
       </h1>
       <p>
-        From interactive tutorials to full-blown IDEs, build instant,
-        interactive coding experiences backed by WebContainers: the trusted,
-        browser-based runtime from
-        <a href="https://stackblitz.com" target="_blank">StackBlitz</a>.
+        补齐前端基础知识，掌握开发调试技巧；补齐纯前端的缺失知识，掌握主流框架
+        Vue 和 React，更从容地面对面试官； 如果想要学习视频教学，推荐
+        <a href="https://www.imooc.com/learn/1288" target="_blank"
+          >慕客网课程</a
+        >
       </p>
       <div class="cta-buttons">
-        <CTAButton href="/guides/quickstart">Get started</CTAButton>
+        <CTAButton href="/guides/quickstart">开始学习</CTAButton>
         <CTAButton href="/guides/introduction" layout="simple"
-          >Learn more</CTAButton
+          >了解更多</CTAButton
         >
       </div>
     </div>

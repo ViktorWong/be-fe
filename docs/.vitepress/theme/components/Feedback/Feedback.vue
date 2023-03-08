@@ -77,13 +77,13 @@ watch(
       <input name="page" />
     </form>
     <template v-if="currentState === FeedbackState.START">
-      <p class="title">Was this page helpful?</p>
+      <p class="title">该内容是否对你有帮助?</p>
       <div class="buttonContainer">
         <button class="button" @click="onButtonClick(FeedbackState.YES)">
-          <span class="icon thumbsUp"></span> Yes
+          <span class="icon thumbsUp"></span> 是
         </button>
         <button class="button" @click="onButtonClick(FeedbackState.NO)">
-          <span class="icon thumbsDown"></span>No
+          <span class="icon thumbsDown"></span> 否
         </button>
       </div>
     </template>
@@ -100,9 +100,9 @@ watch(
         <input type="hidden" name="form-name" value="doc-feedback" />
         <label class="title label" for="feedback">
           <template v-if="currentState === FeedbackState.YES">
-            What was most helpful?
+            什么是最有帮助的？感谢您的反馈
           </template>
-          <template v-else> What should we improve? </template>
+          <template v-else> 我们应该如何改进？我们会努力改进的！ </template>
         </label>
         <textarea
           id="feedback"
@@ -112,17 +112,13 @@ watch(
           autofocus
         ></textarea>
         <button class="button" type="submit" :disabled="feedback.length === 0">
-          <LoadingIcon v-if="isSending" :size="11" />Submit
+          <LoadingIcon v-if="isSending" :size="11" />提交
         </button>
-        <p v-if="hasError" class="error">
-          Sorry, something went wrong. Please try it again later.
-        </p>
+        <p v-if="hasError" class="error">抱歉，发生了一些错误。请稍后再试。</p>
       </form>
     </template>
     <template v-else-if="currentState === FeedbackState.END">
-      <p class="end">
-        Thank you for helping improve our documentation! &#9829;
-      </p>
+      <p class="end">感谢你帮助改进我们的文档! &#9829;</p>
     </template>
   </div>
 </template>

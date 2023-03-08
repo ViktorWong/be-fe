@@ -10,25 +10,40 @@ dotenv.config();
 
 const SIDEBAR_DEFAULT = [
     {
-        text: "Guides",
+        text: "源码学习",
         collapsible: true,
         collapsed: false,
-        items: data.guideLinks,
+        items: data.sourceCodeLinks,
     },
     {
-        text: "Tutorial",
+        text: "面试八股",
         collapsible: true,
         collapsed: false,
-        items: data.tutorialLinks,
+        items: data.interviewLinks,
     },
     {
-        items: [{ text: "API Reference", link: "/api" }],
+        text: "Vue 知识库",
+        collapsible: true,
+        collapsed: true,
+        items: data.vueLinks,
     },
     {
-        items: [{ text: "Enterprise", link: "/enterprise" }],
+        text: "React 知识库",
+        collapsible: true,
+        collapsed: true,
+        items: data.reactLinks,
     },
     {
-        items: [{ text: "Contact", link: "/contact" }],
+        items: [{ text: "前端架构", link: "/api" }],
+    },
+    {
+        items: [
+            { text: "区块链", link: "/enterprise" },
+            { text: "元宇宙", link: "/enterprise" },
+        ],
+    },
+    {
+        items: [{ text: "关于我", link: "/contact" }],
     },
 ];
 
@@ -76,21 +91,19 @@ export default defineConfig({
             dark: "/img/logos/dark.png",
         },
         nav: [
-            { text: "Guides", link: "/guides/introduction" },
+            { text: "Vue 知识库", link: "/vue/introduction" },
             {
-                text: "Tutorial",
-                link: "/tutorial/1-build-your-first-webcontainer-app",
+                text: "React 知识库",
+                link: "/react/introduction",
             },
-            { text: "API Reference", link: "/api" },
-            { text: "Enterprise", link: "/enterprise" },
+            { text: "关于我", link: "/contact" },
         ],
 
         sidebar: {
-            "/guides/": SIDEBAR_DEFAULT,
-            "/tutorial/": SIDEBAR_DEFAULT,
-            "/api": SIDEBAR_DEFAULT,
-            "/enterprise": SIDEBAR_DEFAULT,
-            "/contact": SIDEBAR_DEFAULT,
+            "/source-code/": SIDEBAR_DEFAULT,
+            "/react/": SIDEBAR_DEFAULT,
+            "/vue/": SIDEBAR_DEFAULT,
+            // "/contact": SIDEBAR_DEFAULT,
         },
 
         socialLinks: [

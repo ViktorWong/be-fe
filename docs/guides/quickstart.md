@@ -1,5 +1,5 @@
 ---
-title: &title Quickstart
+title: &title 快速开始
 description: &description This page provides the bare-minimum overview on how to start building with WebContainer API.
 head:
     - ["meta", { property: "og:title", content: *title }]
@@ -14,7 +14,7 @@ head:
     - ["meta", { name: "twitter:description", content: *description }]
 ---
 
-# Quickstart
+# 快速开始
 
 This page provides the bare-minimum overview on how to start building with WebContainer API.
 

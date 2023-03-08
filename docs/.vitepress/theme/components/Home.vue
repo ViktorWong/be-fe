@@ -16,33 +16,29 @@ defineProps<{
 <template>
   <div class="top-section">
     <Hero />
-    <h3>Battle-tested by cutting-edge teams</h3>
-    <WCUsedBy />
-    <TestimonialCardList />
+    <!-- <h3>企业级前端练习项目</h3>
+    <WCUsedBy /> -->
+    <!-- <TestimonialCardList /> -->
   </div>
 
   <div class="section">
     <img src="/img/features/elements-01-nodeLIGHT-02-DARK.png" />
-    <h2>Power your web app with<br />the <strong>WebContainer API</strong></h2>
-    <p>
-      Create unmatched user experiences by integrating Node.js directly into
-      your web app.<br />Build fully-branded products without connecting to
-      external servers or directing users away to third-party apps.
-    </p>
+    <h2>企业级前端练习项目<br />一定要<strong>上手练习保证融汇贯通</strong></h2>
+    <p>想要入门前端开发，动手永远是第一位。<br />不要只看，一定要动手练习。</p>
     <FeaturesCardList />
   </div>
 
   <div class="section">
-    <h3>Set up in only a few steps</h3>
+    <h3>开源优秀库源码逐行解读</h3>
     <WCHelloWorld />
   </div>
 
   <div class="section">
-    <h3>Build rich development experiences not possible before</h3>
+    <h3>推荐业内优秀的教学课程，祝你更进一步</h3>
     <ProjectsUsingWCCardList />
   </div>
 
-  <div class="final-section">
+  <!-- <div class="final-section">
     <div class="section">
       <div class="features-small">
         <div class="feature">
@@ -86,7 +82,7 @@ defineProps<{
       technological possibilities make WebContainer more robust by the day.
     </p>
     <CTAButton href="/guides/quickstart">Get started!</CTAButton>
-  </div>
+  </div> -->
   <Footer :sections="footerSections" />
 </template>
   

@@ -24,21 +24,19 @@ import ExampleBrowser from "./ExampleBrowser.vue";
       <ul class="steps-list">
         <li @mouseover="updateFocusedStep(1)" @mouseleave="updateFocusedStep()">
           <span class="step" />
-          <span class="description">Boot a WebContainer.</span>
+          <span class="description">引导 WebContainer</span>
         </li>
         <li @mouseover="updateFocusedStep(2)" @mouseleave="updateFocusedStep()">
           <span class="step" />
-          <span class="description">Populate the container's file system.</span>
+          <span class="description">读取文件放入容器中</span>
         </li>
         <li @mouseover="updateFocusedStep(3)" @mouseleave="updateFocusedStep()">
           <span class="step" />
-          <span class="description">Programmatically install packages.</span>
+          <span class="description">以编程方式安装包</span>
         </li>
         <li @mouseover="updateFocusedStep(4)" @mouseleave="updateFocusedStep()">
           <span class="step" />
-          <span class="description"
-            >Run your development server in-browser.</span
-          >
+          <span class="description">在浏览器中运行您的开发服务器</span>
         </li>
       </ul>
       <a
@@ -46,10 +44,7 @@ import ExampleBrowser from "./ExampleBrowser.vue";
         href="/tutorial/1-build-your-first-webcontainer-app"
       >
         <span class="icon" />
-        <span
-          ><strong>Read more</strong> about setting up WebContainer in your web
-          app.</span
-        >
+        <span><strong>阅读更多</strong> 源码拆分学习案例</span>
       </a>
     </div>
 
