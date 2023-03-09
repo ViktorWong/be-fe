@@ -8,7 +8,7 @@ export const wexin = "前端苦旅";
 
 // 面试八股
 export const interviewLinks = [
-    { text: "1. 第一招", link: "/interview/introduction" },
+    { text: "0. 知识库介绍", link: "/interview/introduction" },
 ];
 
 // 源码学习
@@ -33,7 +33,6 @@ export const vueLinks = [{ text: "0. 知识库介绍", link: "/vue/introduction"
 // React 知识库
 export const reactLinks = [
     { text: "0. 知识库介绍", link: "/react/introduction" },
-    { text: "1. React", link: "/react/introduction" },
 ];
 
 export const homeExternalLinks = [

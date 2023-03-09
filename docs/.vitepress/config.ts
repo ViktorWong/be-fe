@@ -10,6 +10,18 @@ dotenv.config();
 
 const SIDEBAR_DEFAULT = [
     {
+        text: "Vue 知识库",
+        collapsible: true,
+        collapsed: false,
+        items: data.vueLinks,
+    },
+    {
+        text: "React 知识库",
+        collapsible: true,
+        collapsed: false,
+        items: data.reactLinks,
+    },
+    {
         text: "源码解读",
         collapsible: true,
         collapsed: false,
@@ -22,16 +34,10 @@ const SIDEBAR_DEFAULT = [
         items: data.interviewLinks,
     },
     {
-        text: "Vue 知识库",
+        text: "Web3",
         collapsible: true,
         collapsed: false,
-        items: data.vueLinks,
-    },
-    {
-        text: "React 知识库",
-        collapsible: true,
-        collapsed: false,
-        items: data.reactLinks,
+        items: data.interviewLinks,
     },
     // {
     //     items: [{ text: "前端架构", link: "/api" }],
@@ -42,9 +48,6 @@ const SIDEBAR_DEFAULT = [
     //         { text: "元宇宙", link: "/enterprise" },
     //     ],
     // },
-    {
-        items: [{ text: "关于我", link: "/contact/me" }],
-    },
 ];
 
 export default defineConfig({
@@ -98,6 +101,8 @@ export default defineConfig({
                 text: "React 知识库",
                 link: "/react/introduction",
             },
+            { text: "面试八股", link: "/interview/introduction" },
+            { text: "Web3", link: "/web3/introduction" },
             { text: "关于我", link: "/contact/me" },
         ],
 
@@ -106,7 +111,7 @@ export default defineConfig({
             "/react/": SIDEBAR_DEFAULT,
             "/vue/": SIDEBAR_DEFAULT,
             "/interview/": SIDEBAR_DEFAULT,
-            "/contact": SIDEBAR_DEFAULT,
+            "/web3/": SIDEBAR_DEFAULT,
         },
 
         socialLinks: [
