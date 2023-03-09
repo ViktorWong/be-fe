@@ -25,6 +25,8 @@ jobs:
       - name: Build
         run: npm run docs:build
       - uses: actions/configure-pages@v2
+        with:
+          token: ${{ secrets.PAGES_PAT }}
       - uses: actions/upload-pages-artifact@v1
         with:
           path: docs/.vitepress/build
