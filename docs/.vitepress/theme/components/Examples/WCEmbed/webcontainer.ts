@@ -38,10 +38,12 @@ const dirtyListeners = new Set<DirtyListener>();
 
 const indexFile = `import chalk from 'chalk';
 
-console.log(chalk.magenta('Hello from the WebContainer API 👋'));
+console.log(chalk.magenta('hello stranger，welcome to be frontend with me👋'));
 console.log(chalk.green(\`Running Node \${process.version}\`));
 
-// Run \`node index.js\` from the terminal
+// 在下面练习场的命令行中运行 \`node index.js\` ，开始一个练习。
+// 你也可以试试改改代码，然后再运行 \`node index.js\`，看看效果。
+
 `;
 
 const packageJson = {
