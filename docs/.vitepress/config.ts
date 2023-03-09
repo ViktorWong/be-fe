@@ -74,7 +74,7 @@ export default defineConfig({
     },
     srcDir: ".",
     outDir: "build",
-    base: "/be-fe/",
+    // base: "/be-fe/",
     // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
     cleanUrls: "without-subfolders",
 
