@@ -32,3 +32,31 @@
     font-style: normal;
     src: url("/fonts/gilroy-extrabold.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "TYuYang";
+    src: url("/fonts/yuyang.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TYuYang1";
+    src: url("/fonts/yuyang1.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TXiaoWei";
+    src: url("/fonts/xiaowei.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "THappy";
+    src: url("/fonts/happy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

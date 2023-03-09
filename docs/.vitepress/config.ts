@@ -10,7 +10,7 @@ dotenv.config();
 
 const SIDEBAR_DEFAULT = [
     {
-        text: "源码学习",
+        text: "源码解读",
         collapsible: true,
         collapsed: false,
         items: data.sourceCodeLinks,
@@ -24,26 +24,26 @@ const SIDEBAR_DEFAULT = [
     {
         text: "Vue 知识库",
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: data.vueLinks,
     },
     {
         text: "React 知识库",
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: data.reactLinks,
     },
+    // {
+    //     items: [{ text: "前端架构", link: "/api" }],
+    // },
+    // {
+    //     items: [
+    //         { text: "区块链", link: "/enterprise" },
+    //         { text: "元宇宙", link: "/enterprise" },
+    //     ],
+    // },
     {
-        items: [{ text: "前端架构", link: "/api" }],
-    },
-    {
-        items: [
-            { text: "区块链", link: "/enterprise" },
-            { text: "元宇宙", link: "/enterprise" },
-        ],
-    },
-    {
-        items: [{ text: "关于我", link: "/contact" }],
+        items: [{ text: "关于我", link: "/contact/me" }],
     },
 ];
 
@@ -80,39 +80,42 @@ export default defineConfig({
 
     // Metadata
     lang: "en-US",
-    title: "盗码笔记",
-    description: "工作那几年的一些记录",
+    title: data.title,
+    description: data.description, //页面描述
     head: getHeadTags(process.env),
 
     themeConfig: {
-        siteTitle: false,
-        logo: {
-            light: "/img/logos/light.png",
-            dark: "/img/logos/dark.png",
-        },
+        // siteTitle: false,
+        logo: "/img/logos/logo.svg",
+        // logo: {
+        //     light: "/img/logos/light.png",
+        //     dark: "/img/logos/dark.png",
+        // },
         nav: [
+            { text: "源码解读", link: "/source-code/introduction" },
             { text: "Vue 知识库", link: "/vue/introduction" },
             {
                 text: "React 知识库",
                 link: "/react/introduction",
             },
-            { text: "关于我", link: "/contact" },
+            { text: "关于我", link: "/contact/me" },
         ],
 
         sidebar: {
             "/source-code/": SIDEBAR_DEFAULT,
             "/react/": SIDEBAR_DEFAULT,
             "/vue/": SIDEBAR_DEFAULT,
-            // "/contact": SIDEBAR_DEFAULT,
+            "/interview/": SIDEBAR_DEFAULT,
+            "/contact": SIDEBAR_DEFAULT,
         },
 
         socialLinks: [
-            { icon: "github", link: "https://github.com/vuejs/vitepress" },
+            { icon: "github", link: "https://github.com/ViktorWong/be-fe" },
         ],
 
         editLink: {
             pattern:
-                "https://pr.new/stackblitz/webcontainer-docs/edit/main/docs/:path",
+                "https://pr.new/ViktorWong/be-fe/edit/main/docs/:path",
             text: "编辑这一页",
         },
 
@@ -123,6 +126,7 @@ export default defineConfig({
             md.use(mdFootnote);
         },
     },
+    lastUpdated: true,
 });
 
 function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
@@ -136,10 +140,7 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
             { rel: "icon", type: "image/svg", href: "/img/theme/favicon.svg" },
         ],
         ["meta", { property: "og:type", content: "website" }],
-        ["meta", { property: "og:title", content: "盗码笔记" }],
-        ["meta", { name: "twitter:card", content: "summary_large_image" }],
-        ["meta", { name: "twitter:title", content: "WebContainer API Docs" }],
-        ["meta", { name: "twitter:site", content: "@StackBlitz" }],
+        ["meta", { property: "og:title", content: "前端开发,前端,后端,全栈" }],
     ];
 
     if (env.VITE_GTM_ID) {

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { title } from "../../../data";
 interface Section {
   title: string;
   items: { text: string; link: string }[];
@@ -21,7 +22,14 @@ const year = new Date().getFullYear();
         </ul>
       </div>
     </div>
-    <p class="copyright">© {{ year }} 盗码笔记, Inc.</p>
+    <p class="copyright">
+      Copyright © 2016-{{ year }}
+      <a href="https://luolei.org" :title="title" rel="home">{{ title }}</a>
+      .
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow"
+        >粤ICP备14004235号</a
+      >
+    </p>
   </footer>
 </template>
 

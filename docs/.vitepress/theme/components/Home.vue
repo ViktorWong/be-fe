@@ -21,17 +21,17 @@ defineProps<{
     <!-- <TestimonialCardList /> -->
   </div>
 
-  <div class="section">
+  <!-- <div class="section">
     <img src="/img/features/elements-01-nodeLIGHT-02-DARK.png" />
     <h2>企业级前端练习项目<br />一定要<strong>上手练习保证融汇贯通</strong></h2>
     <p>想要入门前端开发，动手永远是第一位。<br />不要只看，一定要动手练习。</p>
     <FeaturesCardList />
-  </div>
+  </div> -->
 
-  <div class="section">
+  <!-- <div class="section">
     <h3>开源优秀库源码逐行解读</h3>
     <WCHelloWorld />
-  </div>
+  </div> -->
 
   <div class="section">
     <h3>推荐业内优秀的教学课程，祝你更进一步</h3>
@@ -211,7 +211,7 @@ defineProps<{
 
 h3 {
   margin-bottom: 48px;
-  font-family: "Gilroy", sans-serif;
+  font-family: "THappy", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 1.2;

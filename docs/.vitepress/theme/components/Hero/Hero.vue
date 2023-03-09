@@ -6,21 +6,18 @@ import WCEmbed from "@theme/components/Examples/WCEmbed/WCEmbed.vue";
 <template>
   <header>
     <div class="header-content">
-      <h1>
-        <strong>跟着我学习</strong><br />走进
-        <strong>前端开发世界</strong>
-      </h1>
-      <p>
-        补齐前端基础知识，掌握开发调试技巧；补齐纯前端的缺失知识，掌握主流框架
-        Vue 和 React，更从容地面对面试官； 如果想要学习视频教学，推荐
-        <a href="https://www.imooc.com/learn/1288" target="_blank"
-          >慕客网课程</a
-        >
+      <h1 class="header-content-title">世界很喧嚣，<br />做你自己就好</h1>
+      <p class="header-content-subtitle">
+        扎实前端基础知识，熟练开发调试技巧；掌握主流框架 Vue 和
+        React，从容应付面试八股； 借鉴源码核心思想，适宜设计前端架构。<br />
+        <span> ---- “任他前端怎么变，勿焦虑，且随我静心学来”</span>
       </p>
       <div class="cta-buttons">
-        <CTAButton href="/guides/quickstart">开始学习</CTAButton>
-        <CTAButton href="/guides/introduction" layout="simple"
-          >了解更多</CTAButton
+        <CTAButton href="/vue/introduction">开始苦修</CTAButton>
+        <CTAButton
+          href="https://stackblitz.com/?starters=frontend"
+          layout="simple"
+          >前往练习场</CTAButton
         >
       </div>
     </div>
@@ -65,6 +62,15 @@ header {
   gap: 32px;
   @media (max-width: 1024px) {
     align-items: center;
+  }
+
+  &-title {
+    font-family: THappy, SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi,
+      "Microsoft YaHei";
+  }
+  &-subtitle {
+    font-family: THappy, SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi,
+      "Microsoft YaHei";
   }
 }
 

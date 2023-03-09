@@ -5,6 +5,7 @@
     "private": true,
     "scripts": {
         "dev": "vitepress dev docs",
+        "start": "npm run dev",
         "docs:build": "vitepress build docs",
         "docs:preview": "vitepress preview docs",
         "serve": "vitepress serve docs"

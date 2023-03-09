@@ -1,6 +1,14 @@
+export const title = "Viktor 前端苦旅";
+export const description = "世界很喧嚣，做自己就好";
+export const name = "Viktor";
+export const email = "victor318x@gmail.com";
+export const bilibibli = "码农阿东";
+export const wechat = "viktorhub";
+export const wexin = "程序员自习室";
+
 // 面试八股
 export const interviewLinks = [
-    { text: "面试系列", link: "/interview/introduction" },
+    { text: "1. 第一招", link: "/interview/introduction" },
 ];
 
 // 源码学习
@@ -16,10 +24,10 @@ export const sourceCodeLinks = [
 ];
 
 // Vue 知识库
-export const vueLinks = [{ text: "vue", link: "/guides/introduction" }];
+export const vueLinks = [{ text: "1. vue", link: "/vue/introduction" }];
 
 // React 知识库
-export const reactLinks = [{ text: "React", link: "/guides/introduction" }];
+export const reactLinks = [{ text: "1. React", link: "/react/introduction" }];
 
 export const homeExternalLinks = [
     {
@@ -69,35 +77,23 @@ export const footerSections = [
             },
         ],
     },
-    // {
-    //     title: "Product",
-    //     items: [
-    //         { text: "Docs", link: "https://developer.stackblitz.com/" },
-    //         { text: "Enterprise", link: "https://stackblitz.com/enterprise" },
-    //         { text: "Pricing", link: "https://stackblitz.com/membership" },
-    //         {
-    //             text: "Case Studies",
-    //             link: "https://stackblitz.com/case-studies/google",
-    //         },
-    //     ],
-    // },
-    // {
-    //     title: "公司",
-    //     items: [
-    //         { text: "Blog", link: "https://blog.stackblitz.com/" },
-    //         { text: "Careers", link: "https://stackblitz.com/careers" },
-    //         { text: "Community", link: "https://discord.gg/stackblitz" },
-    //         {
-    //             text: "Enterprise Sales",
-    //             link: "https://stackblitz.com/enterprise-contact",
-    //         },
-    //         { text: "Privacy", link: "https://stackblitz.com/privacy-policy" },
-    //         {
-    //             text: "Terms of Service",
-    //             link: "https://stackblitz.com/terms-of-service",
-    //         },
-    //     ],
-    // },
+    {
+        title: "内容平台",
+        items: [
+            {
+                text: "稀土掘金",
+                link: "https://juejin.cn/user/149189280672616",
+            },
+            { text: "数字尾巴", link: "https://www.dgtle.com/user" },
+            { text: "BiliBili", link: "https://space.bilibili.com/401685966" },
+            { text: "知乎", link: "https://www.zhihu.com/people/viktor-68" },
+            { text: "InfoQ", link: "https://www.infoq.cn/u/viktorhub/publish" },
+        ],
+    },
+    {
+        title: "合作联系",
+        items: [{ text: "联系我", link: "/contact/me" }],
+    },
     {
         title: "友链",
         items: [
@@ -314,32 +310,32 @@ export interface ProjectsUsingWCCardData {
 export const projectsUsingWCCardData: ProjectsUsingWCCardData[] = [
     {
         title: "Vue3+TS+Vite+Vant-UI 开发双端招聘APP",
-        description: `这是非常有价值的一门项目开发课程，对于初入职场的开发者，将在你面试时极大提升你的个人竞争力，展露你的能力价值。本课程以业务驱动技术栈，将真正的商用级项目复原在课程中，使用Vite、Vue3、TS、Vant3UI、Pinia和VueUse等多项前沿技术，从项目构建、研发、测试，完成整个全流程的学习。让你在掌握技术的同时，也能提升作为开发者的综合素养。项目功能相对完善，界面美观，手把手带你做出亮眼的作品。`,
+        description: `本课程以业务驱动技术栈，将真正的商用级项目复原在课程中，使用Vite、Vue3、TS、Vant3UI、Pinia和VueUse等多项前沿技术，从项目构建、研发、测试，完成整个全流程的学习。让你在掌握技术的同时，也能提升作为开发者的综合素养。项目功能相对完善，界面美观，手把手带你做出亮眼的作品。`,
         url: "https://coding.imooc.com/class/620.html",
-        urlTitle: "开始学习",
+        urlTitle: "前往学习",
         imgPath: {
-            dark: `/img/svelte-screen-dark.png`,
-            light: `/img/svelte-screen-light.png`,
+            dark: `/img/features/vue3+ts.jpg`,
+            light: `/img/features/vue3+ts.jpg`,
         },
     },
     {
         title: "自主搭建5个精品脚手架，玩转前端提效",
         description: `当下的前端开发，离不开脚手架。初级前端需会用脚手架，中高级前端应能够开发脚手架——掌握脚手架，就是贯穿初中高级前端生涯的核心竞争力之一。本课程集中讲解脚手架的设计思路和开发实践，并带你实现5个不同的脚手架项目，助力前端全流程提效，塑造个人竞争优势。`,
         url: "https://coding.imooc.com/class/607.html",
-        urlTitle: "开始学习",
+        urlTitle: "前往学习",
         imgPath: {
-            dark: `/img/web_publisher-screen-dark.png`,
-            light: `/img/web_publisher-screen-light.png`,
+            dark: `/img/features/cli.jpg`,
+            light: `/img/features/cli.jpg`,
         },
     },
     {
         title: "NestJS 入门到实战 前端必学服务端新趋势",
         description: `NestJS 在构建高效且可扩展的 Node.js 服务器端应用程序方面别具优势，越来越多的团队在大型 Node.js 服务端项目中使用 NestJS，非常值得前端学习。本课程是站内首门讲解 NestJS 的实战课，你将在 Brian 老师的带领下，顺滑地进入服务端开发领域，并掌握 NestJS 这项目技术的高效使用方法。`,
         url: "https://coding.imooc.com/class/617.html",
-        urlTitle: "开始学习",
+        urlTitle: "前往学习",
         imgPath: {
-            dark: `/img/retune-screen.png`,
-            light: `/img/retune-screen.png`,
+            dark: `/img/features/nestjs.jpg`,
+            light: `/img/features/nestjs.jpg`,
         },
     },
 ];
