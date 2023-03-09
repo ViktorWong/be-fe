@@ -30,7 +30,7 @@ jobs:
           enablement: false
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: docs/.vitepress/dist
+          path: docs/build
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
