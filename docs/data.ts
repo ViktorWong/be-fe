@@ -1,10 +1,10 @@
 export const title = "Viktor 前端苦旅";
-export const description = "世界很喧嚣，做自己就好";
+export const description = "世界很喧嚣，做你自己就好";
 export const name = "Viktor";
 export const email = "victor318x@gmail.com";
-export const bilibibli = "码农阿东";
+export const bilibibli = "前端苦旅";
 export const wechat = "viktorhub";
-export const wexin = "程序员自习室";
+export const wexin = "前端苦旅";
 
 // 面试八股
 export const interviewLinks = [
@@ -13,6 +13,10 @@ export const interviewLinks = [
 
 // 源码学习
 export const sourceCodeLinks = [
+    {
+        text: "0. 知识库介绍",
+        link: "/source-code/introduction",
+    },
     {
         text: "1. env 的原理",
         link: "/source-code/dotenv",
@@ -24,10 +28,13 @@ export const sourceCodeLinks = [
 ];
 
 // Vue 知识库
-export const vueLinks = [{ text: "1. vue", link: "/vue/introduction" }];
+export const vueLinks = [{ text: "0. 知识库介绍", link: "/vue/introduction" }];
 
 // React 知识库
-export const reactLinks = [{ text: "1. React", link: "/react/introduction" }];
+export const reactLinks = [
+    { text: "0. 知识库介绍", link: "/react/introduction" },
+    { text: "1. React", link: "/react/introduction" },
+];
 
 export const homeExternalLinks = [
     {

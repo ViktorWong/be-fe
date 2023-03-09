@@ -114,12 +114,17 @@ export default defineConfig({
         ],
 
         editLink: {
-            pattern:
-                "https://pr.new/ViktorWong/be-fe/edit/main/docs/:path",
+            pattern: "https://pr.new/ViktorWong/be-fe/edit/main/docs/:path",
             text: "编辑这一页",
         },
 
         algolia: getAlgoliaConfig(process.env),
+        lastUpdatedText: "最近更新",
+        outlineTitle: "本页导航",
+        docFooter: {
+            prev: "上一页",
+            next: "下一页",
+        },
     },
     markdown: {
         config: (md) => {

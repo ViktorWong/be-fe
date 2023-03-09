@@ -6,11 +6,11 @@
 // :root:not(.dark) {
 :root {
     // Highlight color (links, some borders or hover effects)
-    --vp-c-brand: hsl(200 80% 38%);
-    --vp-c-brand-light: hsl(195 85% 42%);
-    --vp-c-brand-lighter: hsl(190 90% 48%);
-    --vp-c-brand-dark: hsl(200 80% 32%);
-    --vp-c-brand-darker: hsl(200 70% 24%);
+    --vp-c-brand: hsl(224, 46%, 50%);
+    --vp-c-brand-light: hsl(218, 50%, 55%);
+    --vp-c-brand-lighter: hsl(212, 54%, 60%);
+    --vp-c-brand-dark: hsl(224, 46%, 42%);
+    --vp-c-brand-darker: hsl(224, 40%, 32%);
     // Custom highlight colors (used on home page)
     --sb-foreground-highlight: hsl(210 90% 50%);
     --sb-foreground-highlight-high: hsl(190 100% 50%);
@@ -47,11 +47,11 @@
     --vp-custom-block-info-bg: hsl(220 14% 17%);
 
     // Highlight color (links, some borders or hover effects)
-    --vp-c-brand: hsl(190 100% 48%);
-    --vp-c-brand-light: hsl(185 100% 54%);
-    --vp-c-brand-lighter: hsl(180 100% 60%);
-    --vp-c-brand-dark: hsl(190 100% 42%);
-    --vp-c-brand-darker: hsl(190 100% 36%);
+    --vp-c-brand: hsl(224, 46%, 50%);
+    --vp-c-brand-light: hsl(218, 50%, 55%);
+    --vp-c-brand-lighter: hsl(212, 54%, 60%);
+    --vp-c-brand-dark: hsl(224, 46%, 42%);
+    --vp-c-brand-darker: hsl(224, 40%, 32%);
     // Custom highlight colors (used on home page)
     --sb-foreground-highlight: hsl(190, 91%, 69%);
     --sb-foreground-highlight-high: hsl(165, 100%, 60%);
