@@ -120,7 +120,7 @@ export default defineConfig({
 
         editLink: {
             pattern: "https://pr.new/ViktorWong/be-fe/edit/main/docs/:path",
-            text: "编辑这一页",
+            text: "帮忙改善此页面！",
         },
 
         algolia: getAlgoliaConfig(process.env),

@@ -27,7 +27,7 @@ const year = new Date().getFullYear();
       <a href="https://luolei.org" :title="title" rel="home">{{ title }}</a>
       .
       <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow"
-        >粤ICP备14004235号</a
+        >粤ICP备2023024289号-1</a
       >
     </p>
   </footer>
